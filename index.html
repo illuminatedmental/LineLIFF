@@ -66,11 +66,12 @@
     }
 
     async function sendMsg() {
-  liff.sendMessages([
-    {
-      type: "text",
-      text: "Hello, World!",
-    },
+         liff.sendMessages([
+   {
+  "type": "sticker",
+  "packageId": "446",
+  "stickerId": "1988"
+}
   ])
   .then(() => {
     console.log("message sent");
