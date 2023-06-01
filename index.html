@@ -65,24 +65,23 @@
     async function getFriendship() {
     }
 
-    async function sendMsg() {
-         liff.sendMessages([
-   {
-  "type": "sticker",
-  "packageId": "446",
-  "stickerId": "1988"
-}
+     async function sendMsg() {
+  liff.sendMessages([
+    {
+      type: "sticker",
+      stickerId: 52002744,
+      packageId: 11537,
+    },
   ])
   .then(() => {
     console.log("message sent");
   })
   .catch((err) => {
-    console.log("error", err);
+    // console.log("error", err);
+    window.alert(err);
   });
-      
-      
-      
-    }
+  }
+    
 
     function getContext() {
     }
