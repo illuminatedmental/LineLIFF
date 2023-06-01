@@ -67,13 +67,21 @@
 
     async function sendMsg() {
   liff.sendMessages([
-  {
-  "type": "sticker",
-  "packageId": "446",
-  "stickerId": "1988"
-  }
-                   ])
-  }
+    {
+      type: "text",
+      text: "Hello, World!",
+    },
+  ])
+  .then(() => {
+    console.log("message sent");
+  })
+  .catch((err) => {
+    console.log("error", err);
+  });
+      
+      
+      
+    }
 
     function getContext() {
     }
